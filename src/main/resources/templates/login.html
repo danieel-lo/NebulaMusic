@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nebula Music - login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style-form.css">
+</head>
+
+<body>
+    <h1>Login</h1>
+    <main class="auth-card">
+        <section class="auth-card">
+            <form method="post" action="/autenticacion">
+                <label for="correo">Correo: </label>
+                <input type="email" id="correo" name="correo" placeholder="Correo">
+                <br><br>
+                <label for="contrasenia">Contraseña:</label>
+                <input type="password" id="contrasenia" name="contrasenia" placeholder="password">
+                <br><br>
+                <input type="submit" value="iniciar sesion">
+                <input type="reset" value="limpiar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright NebulaMusic 2026</p>
+    </footer>
+</body>
+
+</html>

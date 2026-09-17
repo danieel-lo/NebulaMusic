@@ -1,3 +1,145 @@
-h1{
-    text-align: left;
+body {
+    margin: 0;
+    background-color: #070b1d;
+    color: white;
+    font-family: arial, sans-serif;
+}
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-card {
+    width: 350px;
+    padding: 30px;
+    background-color: #111827;
+    border: 1px solid #4c1d95;
+    border-radius: 15px;
+}
+
+img{
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+h1 span{
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    background-clip: text;
+    color:transparent;
+}
+
+h2 {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #d1d5db;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #0f172a;
+    border: 1px solid #374151;
+    border-radius: 10px;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #7c3aed;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #1f2937;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    color: #9ca3af;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #6b7280;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    opacity: 0.8;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #7c3aed;
+}
+
+input[type="submit"] {
+    background: linear-gradient(90deg, #7c3aed, #2563eb);
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+input[type="reset"] {
+    background-color: #111827;
+    color: white;
+    border: 1px solid #374151;
+}
+
+.auth-card {
+    width: 350px;
+    padding: 30px;
+    background-color: #111827;
+    border: 1px solid #4c1d95;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(124, 58, 237, 0.25);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
 }

@@ -6,28 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nebula Music - login</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--<link rel="stylesheet" href="../static/style-form.css">-->
+    <link rel="stylesheet" href="../static/styles/styles.css">
 </head>
 
 <body>
-    <main class="auth-container">
-        <section class="auth-card">
-            <h1>Nebula <span>Music</span></h1>
-            <form method="post" action="/autenticacion">
+
+<!-- Menu de navegacion -->
+<nav>
+    <a class="logo" href="index.html">
+        <img src="../static/imgs/nebula-03.svg" alt="logo nebula">
+    </a>
+
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="login.html">Iniciar sesion</a></li>
+        <li><a href="registro.html">Registro</a></li>
+    </ul>
+</nav>
+
+
+<main class="auth-container">
+    <section class="auth-card">
+
+        <h1>Nebula <span>Music</span></h1>
+        <form method="post" action="/autenticacion" enctype="application/x-www-form-urlencoded">
+
+            <div class="form-logo">
+                <img src="../static/imgs/nebula-03.svg" alt="Nebula logo">
+            </div>
+
+            <div class="form-header">
+                <h3>Inicia Sesion</h3>
+                <p class="form-subtitle">ingresa tus credenciales de acceso</p>
+            </div>
+
+            <div class="form-group">
                 <label for="correo">Correo: </label>
                 <input type="email" id="correo" name="correo" placeholder="Correo">
-                <br><br>
+            </div>
+
+            <div class="form-group">
                 <label for="contrasenia">Contraseña:</label>
                 <input type="password" id="contrasenia" name="contrasenia" placeholder="password">
-                <br><br>
-                <input type="submit" value="iniciar sesion">
-                <input type="reset" value="limpiar">
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>© Copyright NebulaMusic 2026</p>
-    </footer>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn-primary">iniciar sesion</button>
+                <button type="reset" class="btn-secondary">Cancelar</button>
+            </div>
+
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>© Copyright NebulaMusic 2026</p>
+</footer>
+
 </body>
 
 </html>
